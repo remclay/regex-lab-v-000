@@ -17,5 +17,5 @@ end
 def valid_phone_number?(phone)
   #phone.match(/\d{10}|(\d{3})\d{3}-\d{4}|\d{3} \d{3} \d{4}|(\d{3})\d{7}|\d{7}/) ? true : false
 #  2438894546", "(718)891-1313", "234 435 9978", "(800)4261134
-  phone.match(/\(?\d{3}\)?[ -]?\d{3}[ -]?\d{4}\b/) ? true : false
+  phone.match(/(?\d{3}\)?[ -]?\d{3}[ -]?\d{4}\b/) ? true : false
 end
