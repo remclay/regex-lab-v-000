@@ -15,6 +15,6 @@ def first_word_capitalized_and_ends_with_punctuation?(text)
 end
 
 def valid_phone_number?(phone)
-  phone.match(//) ? true : false
+  phone.match(/\d{10}|(\d{3})\d{3}-\d{4}|\d{3} \d{3} \d{4}|(\d{3})\d{7}/) ? true : false
 #  2438894546", "(718)891-1313", "234 435 9978", "(800)4261134
 end
