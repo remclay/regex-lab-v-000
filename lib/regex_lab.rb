@@ -11,11 +11,11 @@ def words_five_letters_long(text)
 end
 
 def first_word_capitalized_and_ends_with_punctuation?(text)
-  text.match(/^[A-Z]\w+\W\z/) ? true : false
+  text.match(/[A-Z]\w+\W\z/) ? true : false
 end
 
 def valid_phone_number?(phone)
-  
+
 
 #  2438894546", "(718)891-1313", "234 435 9978", "(800)4261134
 end
